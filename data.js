@@ -24,7 +24,6 @@ window.MAFE = {
     { img: "img/v-body.jpg", src: "vid/body.mp4", en: "Body care", es: "Cuidado corporal", c: ["beauty"] },
     { img: "img/v-hair.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792358908/copy_989E4217-07AA-4A4B-BE45-01597717C03C.mov", en: "Hair tool demo", es: "Demo de herramienta para cabello", c: ["hair", "unbox"] },
     { img: "img/v-vigorous.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792359281/1538d2af62344ee184786ba2325377a0.mov", en: "Vigorous hair extensions", es: "Extensiones Vigorous", c: ["hair", "unbox", "fashion"] },
-    { img: "img/v-mom.jpg", en: "Motherhood moment", es: "Momento de mamá", c: ["family"], lang: "ES" },
     { img: "img/v-kid.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792358986/copy_C8311624-29F9-4C1E-8B8B-B8BE8F9D90FF.mov", en: "Kids fashion try-on", es: "Prueba de ropa para niños", c: ["family", "fashion"] },
     { img: "img/v-home.jpg", en: "Home", es: "Hogar", c: ["home"], lang: "EN" },
     { img: "img/v-tech.jpg", en: "Tech tip", es: "Tip de tecnología", c: ["tech"], lang: "EN" }
