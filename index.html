@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Mafe Espinosa · Bilingual UGC Creator (English &amp; Spanish)</title>
+<meta name="description" content="Mafe Espinosa, bilingual Latina UGC creator in McMinnville, Oregon. Product demos, unboxings, tutorials, reviews and routines in English or Spanish.">
+<meta property="og:title" content="Mafe Espinosa · Bilingual UGC Creator">
+<meta property="og:description" content="UGC videos and photos for brands, in English and Spanish.">
+<meta property="og:image" content="img/about-lying.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%233F2D24'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23F4EDE4'%3EM%3C/text%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&display=swap">
+<style>
+/* OPTION 1 — Soft Editorial: light cream pages, one espresso hero band, serif caps + script accent, phone-frame video grid */
+:root{
+  --cream:#F4EDE4; --linen:#EAE0D3; --sand:#D8C6B1; --mocha:#8B6B57; --espresso:#3F2D24; --ink:#2C211B; --paper:#FBF8F3;
+  --serif:"Cormorant Garamond","Times New Roman",Georgia,serif;
+  --script:"Pinyon Script","Brush Script MT",cursive;
+  --sans:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.7;font-weight:400}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(251,248,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linen)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{font-family:var(--serif);font-size:26px;letter-spacing:.18em;text-decoration:none;font-weight:500}
+.logo span{font-family:var(--script);letter-spacing:0;font-size:24px;color:var(--mocha);margin-left:4px}
+.links{display:flex;gap:28px;align-items:center}
+.links a{text-decoration:none;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+.links a:not(.btn):hover{color:var(--mocha)}
+.menu-btn{display:none;background:none;border:1px solid var(--sand);border-radius:999px;padding:8px 14px;font:500 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 26px;border-radius:999px;font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;transition:background .2s,color .2s;cursor:pointer}
+.btn-dark{background:var(--espresso);color:var(--paper)}
+.btn-dark:hover{background:var(--ink)}
+.btn-light{background:var(--paper);color:var(--espresso)}
+.btn-light:hover{background:var(--linen)}
+.btn-line{border-color:currentColor;color:inherit;background:transparent}
+.btn-line:hover{background:rgba(255,255,255,.08)}
+:focus-visible{outline:2px solid var(--mocha);outline-offset:3px}
+
+/* hero */
+.hero{background:var(--espresso);color:var(--linen)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-block:72px}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:500}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(64px,10vw,124px);line-height:.9;letter-spacing:.04em;margin:18px 0 0;color:var(--paper)}
+.hero h1 .script{display:block;font-family:var(--script);font-weight:400;letter-spacing:0;font-size:.62em;color:var(--sand);margin:-.12em 0 0 .9em}
+.hero p.lede{max-width:44ch;margin:22px 0 30px;font-weight:300;font-size:16px;color:var(--linen)}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.socials{display:flex;gap:18px;margin-top:34px;font-size:12px;letter-spacing:.08em;color:var(--sand);flex-wrap:wrap}
+.ph{position:relative;display:flex;align-items:flex-end;justify-content:flex-start;overflow:hidden;color:var(--paper);
+  background:linear-gradient(160deg,#C9B09A 0%,#9C7C66 55%,#6E5243 100%)}
+.ph::after{content:attr(data-label);position:absolute;left:14px;bottom:12px;font:500 10px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;background:rgba(44,33,27,.55);padding:6px 9px;border-radius:4px;max-width:calc(100% - 28px)}
+.hero-photo{aspect-ratio:4/5;border-radius:220px 220px 6px 6px;max-width:440px;width:100%;justify-self:end}
+
+/* format strip */
+.strip{background:var(--linen);border-bottom:1px solid var(--sand)}
+.strip ul{list-style:none;margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;padding-block:18px}
+.strip li{font-family:var(--serif);font-size:19px;font-style:italic;color:var(--espresso)}
+.strip li+li::before{content:"·";margin-right:28px;color:var(--mocha);font-style:normal}
+
+section{padding-block:96px}
+.title{font-family:var(--serif);font-weight:500;font-size:clamp(38px,5vw,56px);letter-spacing:.06em;text-transform:uppercase;line-height:1;margin:0;text-wrap:balance}
+.title em{font-family:var(--script);font-style:normal;text-transform:none;letter-spacing:0;color:var(--mocha);font-size:1.05em;margin-left:.12em}
+.sub{max-width:58ch;color:#5d4a3f;margin:16px 0 0}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.about-photo{aspect-ratio:3/4;border-radius:50% 50% 8px 8px/32% 32% 8px 8px;max-width:420px;width:100%}
+.about-text p{max-width:58ch}
+.todo{background:#FFF7DA;color:#6B5222;border:1px dashed #C9A85C;border-radius:6px;padding:2px 6px;font-size:.92em}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;padding:0;list-style:none}
+.facts li{border:1px solid var(--sand);border-radius:999px;padding:7px 16px;font-size:12px;letter-spacing:.06em;background:var(--paper)}
+
+/* portfolio */
+#portfolio{background:var(--paper)}
+.port-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:34px 0 36px}
+.chip{border:1px solid var(--sand);background:transparent;border-radius:999px;padding:9px 16px;font:500 12px var(--sans);letter-spacing:.06em;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--espresso);border-color:var(--espresso);color:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.card{display:flex;flex-direction:column;gap:12px;text-align:center}
+.phone{border:7px solid var(--ink);border-radius:30px;aspect-ratio:9/16;max-width:100%;cursor:pointer;padding:0;width:100%}
+.phone::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:34%;height:14px;background:var(--ink);border-radius:999px;z-index:2}
+.play{position:absolute;inset:0;margin:auto;width:54px;height:54px;border-radius:50%;background:rgba(251,248,243,.85);display:grid;place-items:center}
+.play::before{content:"";border-left:15px solid var(--espresso);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.card h3{margin:0;font:600 11px var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.card p{margin:-8px 0 0;font-size:12.5px;color:#6b584c}
+.c1{background:linear-gradient(165deg,#E3D3C2,#B99880 60%,#7F5E4B)}
+.c2{background:linear-gradient(165deg,#D9C3A8,#A98564 60%,#6A4B39)}
+.c3{background:linear-gradient(165deg,#EADFD3,#C7AE98 60%,#8F7262)}
+.c4{background:linear-gradient(165deg,#CDB7A3,#957563 60%,#5D4436)}
+.note{margin-top:30px;font-size:13px;color:#6b584c;text-align:center}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--sand);border:1px solid var(--sand);margin-top:44px}
+.svc div{background:var(--cream);padding:30px 28px}
+.svc h3{font-family:var(--serif);font-size:25px;font-weight:500;margin:0 0 6px}
+.svc p{margin:0;font-size:13.5px;color:#5d4a3f}
+.svc-cta{display:flex;justify-content:center;margin-top:40px}
+.svc-cta p{margin:0;font-family:var(--serif);font-size:22px}
+
+/* process */
+#process{background:var(--linen)}
+.steps{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid var(--mocha);padding-top:18px}
+.steps li::before{content:"0" counter(s);font-family:var(--serif);font-size:34px;color:var(--mocha);display:block;line-height:1}
+.steps h3{margin:10px 0 4px;font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.steps p{margin:0;font-size:13.5px;color:#5d4a3f}
+
+/* contact */
+#contact{background:var(--espresso);color:var(--linen);text-align:center}
+#contact .title{color:var(--paper)}
+#contact .title em{color:var(--sand)}
+#contact .sub{margin-inline:auto;color:var(--linen)}
+.contact-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:34px}
+.email{margin-top:26px;font-family:var(--serif);font-size:24px;user-select:all}
+footer{background:var(--ink);color:var(--sand);font-size:12px;letter-spacing:.06em}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:22px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:80;background:rgba(28,20,16,.86);display:grid;place-items:center;padding:24px}
+.lb-box{width:min(360px,86vw);text-align:center;color:var(--linen)}
+.lb .phone{cursor:default;border-color:#111}
+.lb .phone::after{content:"Your video plays here. On the real site it only starts loading when a brand taps play, so the page stays fast.";position:absolute;inset:auto 18px 40%;font:400 13px/1.5 var(--sans);color:var(--paper);background:none;text-transform:none;letter-spacing:0;text-align:center}
+.lb button.close{margin-top:16px}
+
+/* responsive */
+@media (max-width:960px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .svc{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  .menu-btn{display:inline-block}
+  .links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--linen);padding:8px max(20px,env(safe-area-inset-right,0px)) 18px max(20px,env(safe-area-inset-left,0px))}
+  .links.open{display:flex}
+  .links a{padding:14px 0;border-bottom:1px solid var(--linen)}
+  .links .btn{margin-top:14px;border:0}
+  .hero-grid,.about-grid{grid-template-columns:1fr;gap:36px}
+  .hero-grid{padding-block:48px 56px}
+  .hero-photo{justify-self:center;max-width:320px}
+  .about-photo{max-width:300px;margin:0 auto}
+  section{padding-block:68px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:18px}
+  .phone{border-width:5px;border-radius:22px}
+  .svc{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+}
+[hidden]{display:none!important}
+[hidden]{display:none!important}
+.ph:not([data-label])::after{display:none}
+.ph > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero h1{font-size:clamp(54px,8vw,104px)}
+.hero h1 .script{font-size:.66em}
+.socials a{color:var(--sand);text-decoration:none;border-bottom:1px solid rgba(216,198,177,.4)}
+.socials a:hover{color:var(--paper)}
+.ico{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;border:1px solid rgba(216,198,177,.55)!important;color:var(--sand);text-decoration:none;transition:background .2s,color .2s}
+.ico:hover{background:var(--sand);color:var(--espresso)!important}
+.ico-lg{width:46px;height:46px;color:var(--linen);border-color:var(--linen)!important}
+.brands{background:var(--linen);text-align:center;padding-block:72px}
+.brand-row{list-style:none;padding:0;margin:34px 0 0;display:flex;justify-content:center;flex-wrap:wrap;gap:20px}
+.brand-row li{display:flex;flex-direction:column;align-items:center;gap:6px;border:1px solid var(--sand);border-radius:10px;background:var(--paper);padding:22px 40px;min-width:200px}
+.brand-name{font-family:var(--serif);font-size:30px;font-weight:600;letter-spacing:.22em;color:var(--espresso)}
+.brand-note{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#6b584c}
+.contact-row{align-items:center}
+@media (max-width:760px){.strip li+li::before{display:none}.strip ul{gap:6px 22px}}
+.badges{font-weight:600;letter-spacing:.04em;color:var(--espresso);margin:18px 0 6px}
+.quote{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,28px);line-height:1.35;color:var(--espresso);margin:22px 0 0;max-width:30ch}
+.lang-b{position:absolute;top:28px;right:12px;z-index:2;background:var(--paper);color:var(--espresso);font:600 10px var(--sans);letter-spacing:.12em;padding:4px 8px;border-radius:999px}
+.photos{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:40px}
+.photos figure{margin:0}
+.photos .ph{aspect-ratio:3/4;border-radius:10px}
+.photos figcaption{font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-align:center;margin-top:8px;color:#6b584c}
+#photos{background:var(--cream)}
+.empty{grid-column:1/-1;text-align:center;color:#6b584c;padding:30px 0}
+.polas{display:flex;justify-content:center;gap:18px;margin-top:40px;flex-wrap:wrap}
+.pola{background:var(--paper);padding:10px 10px 34px;width:min(220px,42vw);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.pola:nth-child(1){transform:rotate(-4deg)}.pola:nth-child(2){transform:rotate(3deg)}.pola:nth-child(3){transform:rotate(-2deg)}
+.pola .ph{aspect-ratio:1/1}
+@media (max-width:960px){.photos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:760px){.photos{grid-template-columns:repeat(2,1fr);gap:12px}.pola{width:min(150px,40vw)}}
+.right{display:flex;align-items:center;gap:10px}
+.lang{display:inline-flex;border:1px solid var(--sand);border-radius:999px;overflow:hidden;background:var(--paper)}
+.lang button{background:none;border:0;color:var(--espresso);font:600 11px var(--sans);letter-spacing:.14em;padding:8px 12px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--espresso);color:var(--paper)}
+.rates-on{font-family:var(--serif);font-size:24px;margin:0}
+@media (max-width:760px){.lang button{padding:7px 10px}}
+/* phone tuning */
+@media (max-width:760px){
+  section{padding-block:56px}
+  .hero-grid{padding-block:36px 44px;gap:28px}
+  .hero-photo{max-width:250px}
+  .about-photo{max-width:240px}
+  .chips{flex-wrap:nowrap;overflow-x:auto;margin:24px -20px 26px;padding:0 20px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;padding:11px 16px}
+  .svc{margin-top:30px}
+  .svc div{padding:20px}
+  .svc h3{font-size:22px}
+  .brand-row li{min-width:0;width:100%;padding:20px}
+  .email{font-size:clamp(17px,5.2vw,22px);overflow-wrap:anywhere}
+}
+</style>
+
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">MAFE<span>ugc</span></a>
+    <nav class="links" id="links">
+      <a href="#about" data-en="About" data-es="Sobre mí">About</a>
+      <a href="#portfolio" data-en="Videos" data-es="Videos">Videos</a>
+      <a href="#photos" data-en="Photos" data-es="Fotos">Photos</a>
+      <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+      <a class="btn btn-dark" href="#contact" data-en="Work with me" data-es="Trabajemos juntos">Work with me</a>
+    </nav>
+    <div class="right">
+      <div class="lang" role="group" aria-label="Language / Idioma">
+        <button type="button" aria-pressed="true" data-l="en">EN</button><button type="button" aria-pressed="false" data-l="es">ES</button>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links" data-en="Menu" data-es="Menú">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow" data-en="UGC Portfolio · English &amp; Spanish" data-es="Portafolio UGC · Español e inglés">UGC Portfolio · English &amp; Spanish</div>
+        <h1>MAFE ESPINOSA<span class="script" data-en="UGC creator" data-es="Creadora UGC">UGC creator</span></h1>
+        <p class="lede" data-en="Turning everyday moments (travel &amp; hospitality, lifestyle, beauty, motherhood and real life) into content for brands, in English and Spanish." data-es="Convierto momentos cotidianos (viajes y hospitalidad, estilo de vida, belleza, maternidad y la vida real) en contenido para marcas, en inglés y en español.">Turning everyday moments (travel &amp; hospitality, lifestyle, beauty, motherhood and real life) into content for brands, in English and Spanish.</p>
+        <div class="ctas">
+          <a class="btn btn-light" href="#portfolio" data-en="See my work" data-es="Ver mi trabajo">See my work</a>
+          <a class="btn btn-line" href="#contact" data-en="Let's work together" data-es="Trabajemos juntos">Let's work together</a>
+        </div>
+        <div class="socials"><a class="ico" href="" data-ig aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a><a class="ico" href="" data-tt aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" width="19" height="19" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a></div>
+      </div>
+      <div class="ph hero-photo"><img src="img/hero-chair.jpg" alt="Mafe Espinosa sitting on a black chair" style="object-position:50% 30%"></div>
+    </div>
+  </div>
+
+  <div class="strip"><ul class="wrap" id="strip"></ul></div>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="ph about-photo"><img src="img/about-lying.jpg" alt="Portrait of Mafe" style="object-position:50% 70%"></div>
+      <div class="about-text">
+        <h2 class="title"><span data-en="About" data-es="Sobre">About</span> <em data-en="me" data-es="mí">me</em></h2>
+        <p class="badges" data-en="Bilingual · Wife · Latina · Mom of a 4‑year‑old girl" data-es="Bilingüe · Esposa · Latina · Mamá de una niña de 4 años">Bilingual · Wife · Latina · Mom of a 4‑year‑old girl</p>
+        <p data-en="Hi, I'm Mafe, a bilingual Latina mom based in McMinnville, Oregon, creating UGC for brands that want to reach English and Spanish-speaking customers." data-es="Hola, soy Mafe, mamá latina y bilingüe, vivo en McMinnville, Oregón. Creo contenido UGC para marcas que quieren llegar a clientes en inglés y en español.">Hi, I'm Mafe, a bilingual Latina mom based in McMinnville, Oregon, creating UGC for brands that want to reach English and Spanish-speaking customers.</p>
+        <p data-en="I film product demos, unboxings, tutorials, reviews and routines that feel natural, so your audience trusts what they see." data-es="Grabo demos, unboxings, tutoriales, reseñas y rutinas que se sienten naturales, para que tu público confíe en lo que ve.">I film product demos, unboxings, tutorials, reviews and routines that feel natural, so your audience trusts what they see.</p>
+        <p class="quote" data-en="Authentic content, real connection, and a brand partner you can actually count on." data-es="Contenido auténtico, conexión real y una aliada para tu marca con la que de verdad puedes contar.">Authentic content, real connection, and a brand partner you can actually count on.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="port-head">
+        <div>
+          <h2 class="title"><span data-en="UGC" data-es="Videos">UGC</span> <em data-en="videos" data-es="UGC">videos</em></h2>
+          <p class="sub" data-en="Tap a niche to filter. Tap any video to watch." data-es="Toca un nicho para filtrar. Toca un video para verlo.">Tap a niche to filter. Tap any video to watch.</p>
+        </div>
+        <a class="btn btn-dark" href="#contact" data-en="Let's work together" data-es="Trabajemos juntos">Let's work together</a>
+      </div>
+      <div class="chips" role="group" aria-label="Filter videos" id="chips"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="photos">
+    <div class="wrap">
+      <h2 class="title"><span data-en="UGC" data-es="Fotos">UGC</span> <em data-en="photos" data-es="UGC">photos</em></h2>
+      <p class="sub" data-en="Product photos brands can use on their website, ads and social media." data-es="Fotos de producto que las marcas pueden usar en su web, anuncios y redes sociales.">Product photos brands can use on their website, ads and social media.</p>
+      <div class="photos" id="photoGrid"></div>
+    </div>
+  </section>
+
+  <section id="brands" class="brands">
+    <div class="wrap">
+      <h2 class="title"><span data-en="Brands I've" data-es="Marcas con las que">Brands I've</span> <em data-en="worked with" data-es="he trabajado">worked with</em></h2>
+      <ul class="brand-row">
+        <li><span class="brand-name">VIGOROUS</span><span class="brand-note" data-en="Hair extensions" data-es="Extensiones de cabello">Hair extensions</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services" style="background:var(--paper)">
+    <div class="wrap">
+      <h2 class="title"><span data-en="Services" data-es="Servicios">Services</span> <em data-en="&amp; formats" data-es="y formatos">&amp; formats</em></h2>
+      <p class="sub" data-en="Available in English or Spanish, each language as its own video." data-es="Disponible en inglés o en español, cada idioma como un video independiente.">Available in English or Spanish, each language as its own video.</p>
+      <div class="svc">
+        <div><h3 data-en="Product demos" data-es="Demos de producto">Product demos</h3><p data-en="Show the product working, up close and in real use." data-es="El producto funcionando, de cerca y en uso real.">Show the product working, up close and in real use.</p></div>
+        <div><h3 data-en="Unboxings" data-es="Unboxings">Unboxings</h3><p data-en="First impressions and the details customers want to see." data-es="Primeras impresiones y los detalles que los clientes quieren ver.">First impressions and the details customers want to see.</p></div>
+        <div><h3 data-en="Tutorials" data-es="Tutoriales">Tutorials</h3><p data-en="Step-by-step how-tos that answer buyers' questions." data-es="Paso a paso que responde las dudas de los compradores.">Step-by-step how-tos that answer buyers' questions.</p></div>
+        <div><h3 data-en="Reviews &amp; testimonials" data-es="Reseñas y testimonios">Reviews &amp; testimonials</h3><p data-en="Natural, on-camera recommendations for ads and product pages." data-es="Recomendaciones naturales a cámara para anuncios y páginas de producto.">Natural, on-camera recommendations for ads and product pages.</p></div>
+        <div><h3 data-en="Lifestyle &amp; everyday use" data-es="Estilo de vida y uso diario">Lifestyle &amp; everyday use</h3><p data-en="The product inside a real routine and a real home." data-es="El producto dentro de una rutina real y un hogar real.">The product inside a real routine and a real home.</p></div>
+        <div><h3 data-en="Skincare &amp; beauty routines" data-es="Rutinas de skincare y belleza">Skincare &amp; beauty routines</h3><p data-en="Routines, textures and application." data-es="Rutinas, texturas y aplicación.">Routines, textures and application.</p></div>
+        <div><h3 data-en="Family &amp; kids" data-es="Familia y niños">Family &amp; kids</h3><p data-en="Products for parents and little ones, in everyday family life." data-es="Productos para papás y pequeños, en la vida diaria en familia.">Products for parents and little ones, in everyday family life.</p></div>
+        <div><h3 data-en="Hospitality &amp; local business" data-es="Hospitalidad y negocios locales">Hospitality &amp; local business</h3><p data-en="Restaurants, cafés, hotels, local shops and travel experiences, filmed as a real customer would live them." data-es="Restaurantes, cafés, hoteles, tiendas locales y experiencias de viaje, grabados como los vive un cliente real.">Restaurants, cafés, hotels, local shops and travel experiences, filmed as a real customer would live them.</p></div>
+        <div><h3 data-en="UGC photos" data-es="Fotos UGC">UGC photos</h3><p data-en="Product photos for websites, ads and social media." data-es="Fotos de producto para web, anuncios y redes sociales.">Product photos for websites, ads and social media.</p></div>
+      </div>
+      <div class="svc-cta">
+        <a class="btn btn-dark" href="#contact" data-en="Request my rates" data-es="Pedir mis tarifas">Request my rates</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="wrap">
+      <h2 class="title"><span data-en="Let's work" data-es="Trabajemos">Let's work</span> <em data-en="together!" data-es="juntos!">together!</em></h2>
+      <p class="sub" data-en="Tell me about your brand and the content you need, in English or Spanish." data-es="Cuéntame sobre tu marca y el contenido que necesitas, en inglés o en español.">Tell me about your brand and the content you need, in English or Spanish.</p>
+      <p class="sub" data-en="Want to reach more people? Get an English and a Spanish version of your video and speak to both audiences." data-es="¿Quieres llegar a más personas? Pide una versión de tu video en inglés y otra en español y conecta con los dos públicos.">Want to reach more people? Get an English and a Spanish version of your video and speak to both audiences.</p>
+      <div class="contact-row">
+        <a class="ico ico-lg" href="" data-mail aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></a>
+        <a class="ico ico-lg" href="" data-ig aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a class="ico ico-lg" href="" data-tt aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" width="19" height="19" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+      </div>
+      <div class="email" id="email"></div>
+      <div class="polas">
+        <div class="pola"><div class="ph"><img src="img/family-beach.jpg" alt="Mafe with her family on the beach" style="object-position:45% 50%"></div></div>
+        <div class="pola"><div class="ph"><img src="img/beach.jpg" alt="Mafe on the beach" style="object-position:57% 50%"></div></div>
+        <div class="pola"><div class="ph"><img src="img/lights.jpg" alt="Mafe at a light installation"></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© Mafe Espinosa · UGC Creator</span><span data-en="English · Spanish" data-es="Inglés · Español">English · Spanish</span><a href="#top" data-en="Back to top ↑" data-es="Volver arriba ↑">Back to top ↑</a></div></footer>
+
+<script src="data.js"></script>
+<script>
+const M=window.MAFE;let lang='en',cur='all';
+document.querySelectorAll('[data-ig]').forEach(a=>{a.href=M.instagram.url;a.target='_blank';a.rel='noopener';a.title='Instagram '+M.instagram.handle});
+document.querySelectorAll('[data-tt]').forEach(a=>{a.href=M.tiktok.url;a.target='_blank';a.rel='noopener';a.title='TikTok '+M.tiktok.handle});
+document.querySelectorAll('[data-mail]').forEach(a=>a.href='mailto:'+M.email);
+document.getElementById('email').textContent=M.email;
+const chips=document.getElementById('chips'),grid=document.getElementById('grid');
+function renderChips(){
+  chips.innerHTML=[{id:'all',en:'All',es:'Todo'}].concat(M.niches).map(n=>`<button class="chip" aria-pressed="${n.id===cur}" data-f="${n.id}">${n[lang]}</button>`).join('');
+  document.getElementById('strip').innerHTML=M.niches.map(n=>`<li>${n[lang]}</li>`).join('');
+}
+function render(){
+  const list=M.videos.filter(v=>cur==='all'||v.c.includes(cur));
+  const n=M.niches.find(x=>x.id===cur);
+  grid.innerHTML=list.length?list.map(v=>`<div class="card"><button class="ph phone" aria-label="${v[lang]}"${v.img?'':` data-label="${lang==='en'?'Cover photo coming':'Portada pendiente'}"`}>${v.img?`<img src="${v.img}" alt="">`:''}${v.lang?`<span class="lang-b">${v.lang}</span>`:''}<span class="play"></span></button><h3>${v[lang]}</h3></div>`).join('')
+    :`<p class="empty"><span class="todo">${lang==='en'?`No videos here yet. Send me your ${n.en} videos to fill this category.`:`Aún no hay videos aquí. Envíame tus videos de ${n.es} para llenar esta categoría.`}</span></p>`;
+  grid.querySelectorAll('.phone').forEach((b,i)=>b.addEventListener('click',()=>openVideo(list[i],lang)));
+}
+function renderPhotos(){
+  document.getElementById('photoGrid').innerHTML=M.photos.map(p=>`<figure><div class="ph"><img src="${p.img}" alt="${p[lang]}" loading="lazy"></div><figcaption>${p[lang]}</figcaption></figure>`).join('');
+}
+chips.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;cur=c.dataset.f;renderChips();render()});
+function setLang(l){
+  lang=l;document.documentElement.lang=l;
+  document.querySelectorAll('[data-en]').forEach(el=>el.textContent=el.dataset[l]);
+  document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
+  renderChips();render();renderPhotos();
+  try{localStorage.setItem('mafe-lang',l)}catch(e){}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.l)));
+const menuBtn=document.getElementById('menuBtn'),links=document.getElementById('links');
+menuBtn.addEventListener('click',()=>{const o=links.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o)});
+links.addEventListener('click',e=>{if(e.target.closest('a')){links.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}});
+let saved='en';try{saved=localStorage.getItem('mafe-lang')||'en'}catch(e){}
+setLang(saved);
+</script>
