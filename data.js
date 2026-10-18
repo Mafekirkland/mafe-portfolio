@@ -59,12 +59,17 @@ window.openVideo = function (v, lang) {
   }
   const es = lang === "es";
   lb.querySelector("img").src = v.img || "";
-  // Local mp4 first; otherwise stream from Cloudinary as a phone-friendly mp4.
-  const url = v.src || (v.cloud ? v.cloud.replace("/upload/", "/upload/f_mp4,vc_h264,q_auto,w_720/").replace(/\.mov$/i, ".mp4") : "");
+  // Local mp4 first; otherwise a small phone-friendly mp4 from Cloudinary (converted once, then cached).
+  const url = v.src || (v.cloud ? v.cloud.replace("/upload/", "/upload/f_mp4,vc_h264,q_auto:eco,w_540/").replace(/\.mov$/i, ".mp4") : "");
   lb.querySelector("p").textContent = es ? "Video disponible pronto." : "Video coming soon.";
   const vd = lb.querySelector("video"), im = lb.querySelector("img"), p = lb.querySelector("p");
   vd.hidden = !url; im.hidden = p.hidden = !!url;
-  if (url) { vd.poster = v.img || ""; vd.src = url; vd.play().catch(() => {}); }
+  if (url) {
+    im.hidden = p.hidden = false; vd.style.opacity = "0";
+    p.textContent = es ? "Cargando video…" : "Loading video…";
+    vd.onplaying = () => { vd.style.opacity = "1"; im.hidden = p.hidden = true; };
+    vd.src = url; vd.play().catch(() => { vd.style.opacity = "1"; im.hidden = p.hidden = true; });
+  }
   lb.querySelector(".vlb-close").textContent = es ? "Cerrar" : "Close";
   lb.hidden = false;
   lb.querySelector(".vlb-close").focus();
