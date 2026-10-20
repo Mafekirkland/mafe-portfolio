@@ -62,9 +62,9 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rg
 
 /* format strip */
 .strip{background:var(--linen);border-bottom:1px solid var(--sand)}
-.strip ul{list-style:none;margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;padding-block:18px}
-.strip li{font-family:var(--serif);font-size:19px;font-style:italic;color:var(--espresso)}
-.strip li+li::before{content:"·";margin-right:28px;color:var(--mocha);font-style:normal}
+.strip ul{list-style:none;margin:0 auto;display:flex;flex-wrap:nowrap;justify-content:center;align-items:center;gap:0 18px;padding-block:18px;white-space:nowrap}
+.strip li{font-family:var(--serif);font-size:18px;font-style:italic;color:var(--espresso)}
+.strip li+li::before{content:"·";margin-right:18px;color:var(--mocha);font-style:normal}
 
 section{padding-block:96px}
 .title{font-family:var(--serif);font-weight:500;font-size:clamp(38px,5vw,56px);letter-spacing:.06em;text-transform:uppercase;line-height:1;margin:0;text-wrap:balance}
@@ -171,6 +171,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 .brand-name{font-family:var(--serif);font-size:30px;font-weight:600;letter-spacing:.22em;color:var(--espresso)}
 .brand-note{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#6b584c}
 .contact-row{align-items:center}
+@media (max-width:1100px){.strip ul{flex-wrap:wrap;white-space:normal;gap:6px 18px}}
 @media (max-width:760px){.strip li+li::before{display:none}.strip ul{gap:6px 22px}}
 .badges{font-weight:600;letter-spacing:.04em;color:var(--espresso);margin:18px 0 6px}
 .quote{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,28px);line-height:1.35;color:var(--espresso);margin:22px 0 0;max-width:30ch}

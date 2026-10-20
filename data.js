@@ -8,10 +8,9 @@ window.MAFE = {
   niches: [
     { id: "beauty", en: "Beauty & Skincare", es: "Belleza y skincare" },
     { id: "unbox", en: "Unboxing & Reviews", es: "Unboxing y reseñas" },
-    { id: "hair", en: "Hair Care", es: "Cuidado del cabello" },
     { id: "family", en: "Kids Products", es: "Productos para niños" },
     { id: "home", en: "Home & Organization", es: "Hogar y organización" },
-    { id: "tech", en: "Tech & Software", es: "Tecnología y software" },
+    { id: "tech", en: "Tech Tips", es: "Tips de tecnología" },
     { id: "travel", en: "Hospitality & Local Business", es: "Hospitalidad y negocios locales" },
     { id: "fashion", en: "Fashion", es: "Moda" }
   ],
