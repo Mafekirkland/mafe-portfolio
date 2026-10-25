@@ -21,7 +21,7 @@ window.MAFE = {
     { img: "img/v-tryon.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792359296/4fb6671e929d4b00adf561eb0ca95e29.mov", en: "Skincare try-on & benefits", es: "Prueba de skincare y beneficios", c: ["beauty", "unbox"] },
     { img: "img/v-brush.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792367486/1826f25440904c948970f440afed448c.mov", en: "Beauty tutorial", es: "Tutorial de belleza", c: ["beauty"] },
     { img: "img/v-body.jpg", src: "vid/body.mp4", en: "Body care", es: "Cuidado corporal", c: ["beauty"] },
-    { img: "img/v-hair.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792358908/copy_989E4217-07AA-4A4B-BE45-01597717C03C.mov", en: "Hair tool demo", es: "Demo de herramienta para cabello", c: ["hair", "unbox"] },
+    { img: "img/v-hair.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792963453/6F2D0DF1-9581-4112-A7A6-2590DBFFE634.mov", en: "Hair tool demo", es: "Demo de herramienta para cabello", c: ["hair", "unbox"] },
     { img: "img/v-vigorous.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792359281/1538d2af62344ee184786ba2325377a0.mov", en: "Vigorous hair extensions", es: "Extensiones Vigorous", c: ["hair", "unbox", "fashion"] },
     { img: "img/v-kid.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792358986/copy_C8311624-29F9-4C1E-8B8B-B8BE8F9D90FF.mov", en: "Kids fashion try-on", es: "Prueba de ropa para niños", c: ["family", "fashion"] },
     { img: "img/v-princess.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792963461/copy_1D807723-7FCB-4F18-A948-5E9A49F0EAC4.mov", en: "Princess day experience", es: "Experiencia de princesas", c: ["travel"], lang: "EN" },
