@@ -25,6 +25,7 @@ window.MAFE = {
     { img: "img/v-vigorous.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792963453/6F2D0DF1-9581-4112-A7A6-2590DBFFE634.mov", en: "Vigorous hair extensions", es: "Extensiones Vigorous", c: ["hair", "unbox", "fashion"] },
     { img: "img/v-kid.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792358986/copy_C8311624-29F9-4C1E-8B8B-B8BE8F9D90FF.mov", en: "Kids fashion try-on", es: "Prueba de ropa para niños", c: ["family", "fashion"] },
     { img: "img/v-princess.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792963461/copy_1D807723-7FCB-4F18-A948-5E9A49F0EAC4.mov", en: "Local business", es: "Negocio local", c: ["travel"], lang: "EN" },
+    { img: "img/v-mthood.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792975723/copy_183D463D-3161-4929-84CD-F1BFE5C2B3A3.mov", en: "Hotel & resort", es: "Hotel y resort", c: ["travel"], lang: "EN" },
     { img: "img/v-home.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792367852/c7681a12bf9149f1b45d13e99c6e169a.mov", en: "Home", es: "Hogar", c: ["home"], lang: "EN" },
     { img: "img/v-tech.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792367723/copy_48DBD106-A2E2-49E3-929D-BE248D188CE2.mov", en: "Tech tip", es: "Tip de tecnología", c: ["tech"], lang: "EN" }
   ],
