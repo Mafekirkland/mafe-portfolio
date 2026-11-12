@@ -19,6 +19,7 @@ window.MAFE = {
     { img: "img/v-unbox.jpg", src: "vid/unbox.mp4", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792359301/copy_0EF99309-BC08-4A89-9F91-CCEECC418FA6.mov", en: "Skincare unboxing", es: "Unboxing de skincare", c: ["beauty", "unbox"] },
     { img: "img/v-tallow.jpg", src: "vid/tallow.mp4", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792359290/c516ac8138a849f8b78dabe3c9b3362f.mov", en: "Skincare product demo", es: "Demo de producto", c: ["beauty", "unbox"], lang: "ES" },
     { img: "img/v-tryon.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792359296/4fb6671e929d4b00adf561eb0ca95e29.mov", en: "Skincare try-on & benefits", es: "Prueba de skincare y beneficios", c: ["beauty", "unbox"] },
+    { img: "img/v-temu.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1794513696/ad26e6e9874a4eb29b99f4a7e51235ab.mov", en: "Holiday unboxing", es: "Unboxing navideño", c: ["unbox"], lang: "EN" },
     { img: "img/v-brush.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792367486/1826f25440904c948970f440afed448c.mov", en: "Beauty tutorial", es: "Tutorial de belleza", c: ["beauty"] },
     { img: "img/v-body.jpg", src: "vid/body.mp4", en: "Body care", es: "Cuidado corporal", c: ["beauty"] },
     { img: "img/v-hair.jpg", cloud: "https://res.cloudinary.com/vsqztfkp/video/upload/v1792358908/copy_989E4217-07AA-4A4B-BE45-01597717C03C.mov", en: "Hair tool demo", es: "Demo de herramienta para cabello", c: ["hair", "unbox"] },
